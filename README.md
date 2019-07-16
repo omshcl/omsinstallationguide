@@ -1,8 +1,5 @@
 # IBM Sterling OMS Installation guide Windows 10
 
-## download db2jcc4 jar
-https://jar-download.com/?search_box=db2jcc4
-
 # db2 connection
 CREATE DATABASE OMDB
 
@@ -18,10 +15,68 @@ CREATE SYSTEM TEMPORARY TABLESPACE ICMLSSYSTSPACE16 PAGESIZE 16k BUFFERPOOL ICML
 CREATE SYSTEM TEMPORARY TABLESPACE ICMLSSYSTSPACE8  PAGESIZE  8k BUFFERPOOL ICMLBUFFER8
 CREATE SYSTEM TEMPORARY TABLESPACE ICMLSSYSTSPACE4  PAGESIZE  4k BUFFERPOOL ICMLBUFFER4
 
-# installation arguments
 
--XX:MaxPermSize=768m
--J-Xms1408m -J-Xmx1752mS
+## download db2jcc4 jar
+https://jar-download.com/?search_box=db2jcc4
+
+
+## Oms installation arguments
+
+Database Vendor
+
+    DB2
+Database user name
+
+    alice
+
+Database password
+ 
+    acoount password
+
+
+Database Catalog name
+
+    OMDB
+
+
+Hostname
+
+    localhost
+
+port number
+
+    50000
+
+schema name
+
+    ALICE
+
+jar
+ 
+    path to the downloaded jar
+
+Additional ant arguments
+ 
+    -XX:MaxPermSize=768m
+    
+    -J-Xms1408m -J-Xmx1752m
+# build ear file
+
+# install war
+
+ 
+    https://localhost:9043/ibm/console
+
+Applications  
+Application Typees  
+Websphere Enterpis applicatin  
+Install  
+Click smcfs.ear
+
+Fast Path
+
+
+Select all the jars and war files
 
 ## Configure JDB Deploy heap size parameter
 Type "Edit the System Environment variables into the search console
