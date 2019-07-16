@@ -68,7 +68,7 @@ Additional ant arguments
 # build ear file
 Navigate to C:\IBM\bin
  
-    buildear.cmd -Dsupport.multi.war=true -Dappserver=websphere -Dwarfiles=smcfs,sbc,sic -Dearfile=smcfs.ear -Ddevmode=true -Dnowebervice=true Dnodocear=false create-ear
+    buildear.cmd -Dsupport.multi.war=true -Dappserver=websphere -Dwarfiles=smcfs,sbc,sic,sma -Dearfile=smcfs.ear -Ddevmode=true -Dnowebervice=true Dnodocear=false create-ear
 
 # install web sphere application server
 Download
