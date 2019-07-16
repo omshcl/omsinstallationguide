@@ -18,6 +18,11 @@
 ## download db2jcc4 jar
 https://jar-download.com/?search_box=db2jcc4
 
+## Download OMS
+
+
+Oms Enterprise Edition V10.0
+
 
 ## Oms installation arguments
 
