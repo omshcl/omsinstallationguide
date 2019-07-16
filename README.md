@@ -59,26 +59,21 @@ Additional ant arguments
     -XX:MaxPermSize=768m
     
     -J-Xms1408m -J-Xmx1752m
+    
 # build ear file
 Navigate to C:\IBM\bin
  
     buildear.cmd -Dsupport.multi.war=true -Dappserver=websphere -Dwarfiles=smcfs,sbc,sic -Dearfile=smcfs.ear -Ddevmode=true -Dnowebervice=true= Dnodocear=false create-ear
 
-# install war
-
+# install web sphere application server
+Download
  
-    https://localhost:9043/ibm/console
-
-Applications  
-Application Typees  
-Websphere Enterpis applicatin  
-Install  
-Click smcfs.ear
-
-Fast Path
-
-
-Select all the jars and war files
+    IBM WebSphere Application Server Version 9.0.0.0
+    IBM SDK, Java Technology Edition, Version 8 Version 8.0.5.35
+ 
+## create a profile
+Open Profile management tool and create a new user
+Start the server through the start menu
 
 ## Configure JDB Deploy heap size parameter
 Type "Edit the System Environment variables into the search console
@@ -91,8 +86,22 @@ Variable name:
 Variable Value:
  
     -Xms2048m -Xmx18000m
-
 apply and save
+## install war
+
+ 
+    https://localhost:9043/ibm/console
+
+Applications  
+Application Typees  
+Websphere Enterpis applicatin  
+Install  
+Click smcfs.ear
+
+Fast Path
+
+Select all the jars and war files
+finish
 ## Configure db2 connection  for installed oms application
 localhost:9060/ibm/console/login.do
 Servers-> WebSphere application servers -> server1 -> Java and  -> Process Definition -> Java Virtual Machine
