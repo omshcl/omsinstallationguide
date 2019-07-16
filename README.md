@@ -61,6 +61,9 @@ Additional ant arguments
     
     -J-Xms1408m -J-Xmx1752m
 # build ear file
+Navigate to C:\IBM\bin
+ 
+    buildear.cmd -Dsupport.multi.war=true -Dappserver=websphere -Dwarfiles=smcfs,sbc,sic -Dearfile=smcfs.ear -Ddevmode=true -Dnowebervice=true= Dnodocear=false create-ear
 
 # install war
 
