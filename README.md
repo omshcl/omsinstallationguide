@@ -143,9 +143,15 @@ ensure -Dnowebservice=true is passed to your [build ear](#build-ear-file) comman
 ### JDEploy out of heap memory error
 ensure JVM  [EJBDEPLOY_JVM_HEAP](#Configure-JDB-Deploy-heap-size-parameter)  is set as a system variable
 # Debugging
-### DB2
+## DB2
 check that you can acess the OMDB database using Oracle Sql Developer
 ### query version number
  
     connect to OMDB
     SELECT service_level,fixpack_num from TABLE(sysproc.env_get_inst_info()) as INSTANCEINFO
+ ## Websphere
+ ### admin console url
+ http://localhost:9060/ibm/console/
+ 
+ ### Websphere log path
+ C:\Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01\logs\server1
