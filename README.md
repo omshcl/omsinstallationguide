@@ -124,6 +124,9 @@ IBM Sterling CallCenter Installer
 ## install fixpack
 IBM sterling ISCCS FixPack Installer 
 
+# Errors
+## JDEploy out of heap memory error
+ensure JVM  [EJBDEPLOY_JVM_HEAP](#Configure-JDB-Deploy-heap-size-parameter)  is set as a system variable
 # Debugging
 
 ## DB2
