@@ -1,6 +1,10 @@
 # IBM Sterling OMS Installation guide Windows 10
+- [Install Guide](#Install-guide)
+- [Errors]
+- [Debugging]
 
-# db2 connection
+# Install guide
+## db2 connection
  
     CREATE DATABASE OMDB
     CONNECT TO OMDB
@@ -22,7 +26,7 @@ https://jar-download.com/?search_box=db2jcc4
 
 
 Oms Enterprise Edition V10.0
-
+Fixpack 
 
 ## Oms installation arguments
 
@@ -113,3 +117,11 @@ Servers-> WebSphere application servers -> server1 -> Java and  -> Process Defin
 Under Generic JVM arguments enter
  
     -Dvendor=shell -DvendorFile=/servers.properties -Dsci.naming.provider.url=corbaloc::localhost:2809
+
+
+# Install sterling ICSS
+IBM Sterling CallCenter Installer
+## install fixpack
+IBM sterling ISCCS FixPack Installer 
+
+# Debugging
