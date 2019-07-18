@@ -153,6 +153,9 @@ check that you can acess the OMDB database using Oracle Sql Developer
  
     connect to OMDB
     SELECT service_level,fixpack_num from TABLE(sysproc.env_get_inst_info()) as INSTANCEINFO
+    
+### check db2 connection
+using the original oms installer 
  ## Websphere
  ### admin console url
  http://localhost:9060/ibm/console/
