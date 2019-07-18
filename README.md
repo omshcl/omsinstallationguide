@@ -145,6 +145,10 @@ ensure JVM  [EJBDEPLOY_JVM_HEAP](#Configure-JDB-Deploy-heap-size-parameter)  is 
 # Debugging
 ## DB2
 check that you can acess the OMDB database using Oracle Sql Developer
+
+### get db2 configuration data
+ 
+    get dbm cfg
 ### query version number
  
     connect to OMDB
@@ -155,3 +159,4 @@ check that you can acess the OMDB database using Oracle Sql Developer
  
  ### Websphere log path
  C:\Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01\logs\server1
+ 
