@@ -4,6 +4,8 @@
 - [Debugging](#Debugging)
 
 # Install guide
+# install IBM db2
+Version DB2 v10.5.300.125                                                                                                                       fixpack 3
 ## db2 connection
  
     CREATE DATABASE OMDB
@@ -141,6 +143,9 @@ ensure -Dnowebservice=true is passed to your [build ear](#build-ear-file) comman
 ## JDEploy out of heap memory error
 ensure JVM  [EJBDEPLOY_JVM_HEAP](#Configure-JDB-Deploy-heap-size-parameter)  is set as a system variable
 # Debugging
-
 ## DB2
 check that you can acess the OMDB database using Oracle Sql Developer
+### query version number
+ 
+    connect to OMDB
+    SELECT service_level,fixpack_num from TABLE(sysproc.env_get_inst_info()) as INSTANCEINFO
