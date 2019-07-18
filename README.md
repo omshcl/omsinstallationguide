@@ -6,7 +6,8 @@
 # Install guide
 ### install IBM db2
 Version DB2 v10.5.300.125                                                                                                                       fixpack 3
-### db2 connection
+### create db2 bufferpool
+once db2 is installed run
  
     CREATE DATABASE OMDB
     CONNECT TO OMDB
