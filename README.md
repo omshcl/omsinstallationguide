@@ -158,5 +158,5 @@ check that you can acess the OMDB database using Oracle Sql Developer
  http://localhost:9060/ibm/console/
  
  ### Websphere log path
- C:\Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01\logs\server1
+ file:///C:\Program Files\IBM\WebSphere\AppServer\profiles\AppSrv01\logs\server1
  
