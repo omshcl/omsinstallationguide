@@ -1,7 +1,7 @@
 # IBM Sterling OMS Installation guide Windows 10
 - [Install Guide](#Install-guide)
-- [Errors]
-- [Debugging]
+- [Errors](#Errors)
+- [Debugging](#Debugging)
 
 # Install guide
 ## db2 connection
@@ -125,3 +125,6 @@ IBM Sterling CallCenter Installer
 IBM sterling ISCCS FixPack Installer 
 
 # Debugging
+
+## DB2
+check that you can acess the OMDB database using Oracle Sql Developer
