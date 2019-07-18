@@ -125,6 +125,14 @@ IBM Sterling CallCenter Installer
 IBM sterling ISCCS FixPack Installer 
 
 # Errors
+## IBM Oms installer fails with IBM folder is already in use
+change the installation directory to another folder
+
+
+## Java path can't have spaces in it
+copy java
+from `C:\Program Files\Java\jdk1.8.0_211` to `C:\Java\jdk1.8.0_211` then use the C:\Java path
+
 ## JDEploy out of heap memory error
 ensure JVM  [EJBDEPLOY_JVM_HEAP](#Configure-JDB-Deploy-heap-size-parameter)  is set as a system variable
 # Debugging
