@@ -158,6 +158,7 @@ check that you can acess the OMDB database using Oracle Sql Developer
 using the original oms installer 
 if yes then
 check the SystemOut.log to see if a NameNotFoundException happens
+[db2 connection debugging](https://www-01.ibm.com/support/docview.wss?uid=swg21247168)
  ## Websphere
  ### admin console url
  http://localhost:9060/ibm/console/
