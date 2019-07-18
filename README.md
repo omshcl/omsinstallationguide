@@ -69,12 +69,12 @@ Additional ant arguments
     
     -J-Xms1408m -J-Xmx1752m
     
-# build ear file
+## build ear file
 Navigate to C:\IBM\bin
  
     buildear.cmd -Dsupport.multi.war=true -Dappserver=websphere -Dwarfiles=smcfs,sbc,sic,sma -Dearfile=smcfs.ear -Ddevmode=true -Dnowebservice=true -Dnodocear=false create-ear
 
-# install web sphere application server
+## install web sphere application server
 Download
  
     IBM WebSphere Application Server Version 9.0.0.0
@@ -132,6 +132,11 @@ change the installation directory to another folder
 ## Java path can't have spaces in it
 copy java
 from `C:\Program Files\Java\jdk1.8.0_211` to `C:\Java\jdk1.8.0_211` then use the C:\Java path
+
+## buildear fails with named webservices 
+C:\IBM1\properties\buildWARCommonUtils.xml:1210: AFC000069:  file does not exist: C:\IBM1/repository/eardata/platform/webservices/namedwebservices.xml
+
+ensure -Dnowebservice=true is passed to your [build ear](#build-ear-file) command
 
 ## JDEploy out of heap memory error
 ensure JVM  [EJBDEPLOY_JVM_HEAP](#Configure-JDB-Deploy-heap-size-parameter)  is set as a system variable
